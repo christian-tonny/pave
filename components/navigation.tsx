@@ -76,6 +76,8 @@ export default function Navigation() {
   };
 
   const navLinks = getNavLinks();
+  const dashboardPath = userRole === 'admin' ? '/admin' : getDashboardPath(userRole as any);
+  const signedInLogoHref = convexUser ? dashboardPath : '/auth-redirect';
 
   const linkClass =
     'flex items-center gap-2 px-2.5 py-2 text-sm text-pave-soft hover:text-pave-ink transition-colors pave-focus rounded-md';
@@ -84,7 +86,12 @@ export default function Navigation() {
     <nav className="sticky top-0 z-50 bg-pave-paper/90 backdrop-blur border-b border-pave-line">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <PaveWordmark />
+          <SignedOut>
+            <PaveWordmark href="/" />
+          </SignedOut>
+          <SignedIn>
+            <PaveWordmark href={signedInLogoHref} />
+          </SignedIn>
 
           {/* Desktop */}
           <div className="hidden lg:flex items-center gap-1">

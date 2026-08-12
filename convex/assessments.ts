@@ -52,7 +52,12 @@ export const getResults = query({
                     shortDescription: career.shortDescription,
                     salaryMin: career.salaryMin,
                     salaryMax: career.salaryMax,
-                    costAnalysis: 'costAnalysis' in career ? career.costAnalysis : undefined
+                    costAnalysis: career.costAnalysis
+                      ? {
+                          totalCostMin: career.costAnalysis.totalCostMin,
+                          totalCostMax: career.costAnalysis.totalCostMax,
+                        }
+                      : undefined,
                   }
                 : null,
             };
@@ -96,6 +101,17 @@ export const saveResult = mutation({
       completedAt: Date.now(),
     });
 
+    await ctx.db.insert("analyticsEvents", {
+      eventName: "assessment_completed",
+      actorUserId: user._id,
+      actorRole: user.role,
+      metadata: {
+        assessmentId: args.assessmentId,
+        resultId,
+      },
+      createdAt: Date.now(),
+    });
+
     return { resultId };
   },
 });
@@ -111,7 +127,7 @@ export const deleteResult = mutation({
     if (!result) {
       throw new Error("Result not found");
     }
-    if (result.studentId !== user._id) {
+    if (result.studentId !== user._id.toString()) {
       throw new Error("Unauthorized: You can only delete your own results");
     }
 

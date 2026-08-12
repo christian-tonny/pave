@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "seed": "powershell -ExecutionPolicy Bypass -File ./scripts/seed-all.ps1"
+    "seed": "powershell -ExecutionPolicy Bypass -File ./scripts/seed-all.ps1",
+    "backup:env:op": "bash ./scripts/backup-env-to-1password.sh"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.36.2",

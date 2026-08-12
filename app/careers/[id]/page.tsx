@@ -25,6 +25,8 @@ import { NotFoundError } from "@/components/error-state";
 import Link from "next/link";
 import { useConvexAuth } from "@/lib/hooks/useConvexAuth";
 import { SalaryCalculator } from "@/components/SalaryCalculator";
+import { CostBreakdown } from "@/components/CostBreakdown";
+import { SchoolRecommendations } from "@/components/SchoolRecommendations";
 import { RealityQuiz } from "@/components/RealityQuiz";
 
 export default function CareerDetailPage() {
@@ -36,7 +38,7 @@ export default function CareerDetailPage() {
   const [showVideo, setShowVideo] = useState(false);
 
   // Fetch career from Convex
-  const career = useQuery(api.careers.getById, { id: careerId as any });
+  const career = useQuery(api.careers.getByIdWithSchools, { id: careerId as any });
   const bookmarkedIds = useQuery(api.savedCareers.getIds, user ? {} : "skip");
   const toggleBookmark = useMutation(api.savedCareers.toggle);
 
@@ -44,6 +46,11 @@ export default function CareerDetailPage() {
   const availableProfessionals = useQuery(
     api.professionals.getByCareerIds,
     career ? { careerIds: [careerId] } : "skip"
+  );
+
+  const careerSchools = useQuery(
+    api.schools.getByCareer,
+    career ? { careerId: careerId as any } : "skip"
   );
 
   // Get related careers
@@ -219,6 +226,18 @@ export default function CareerDetailPage() {
           </Card>
         )}
 
+        {/* Cost Analysis Section */}
+        {career.costAnalysis && (
+          <div className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Cost to Enter This Career</h2>
+            <CostBreakdown
+              costAnalysis={career.costAnalysis}
+              displayMode="full"
+              showSchools={true}
+            />
+          </div>
+        )}
+
         {/* About Section */}
         <div className="mb-8 sm:mb-10 md:mb-12">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">About This Career</h2>
@@ -230,6 +249,20 @@ export default function CareerDetailPage() {
             </CardContent>
           </Card>
         </div>
+
+        {/* Reality Quiz */}
+        {career.realityQuiz && (
+          <div className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">
+              Reality Check Quiz
+            </h2>
+            <RealityQuiz
+              quiz={career.realityQuiz}
+              careerId={career._id}
+              careerTitle={career.title}
+            />
+          </div>
+        )}
 
         {/* Required Skills */}
         <div className="mb-8 sm:mb-10 md:mb-12">
@@ -588,6 +621,20 @@ export default function CareerDetailPage() {
                 </div>
               </CardContent>
             </Card>
+          </div>
+        )}
+
+        {/* Recommended Schools */}
+        {careerSchools && careerSchools.length > 0 && (
+          <div className="mb-8 sm:mb-10 md:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Where to Study</h2>
+            <SchoolRecommendations
+              schools={careerSchools}
+              careerId={career._id}
+              title="Institutions for this Career Path"
+              maxDisplay={6}
+              showViewAll={false}
+            />
           </div>
         )}
 
