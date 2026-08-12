@@ -90,7 +90,7 @@ export default function AdminLayout({
         <div className="p-6 border-b-2 border-gray-800">
           <Link href="/admin" className="block">
             <h1 className="text-2xl font-black uppercase">
-              SPARK
+              Pave
               <span className="block text-sm text-brutal-yellow">Admin Panel</span>
             </h1>
           </Link>

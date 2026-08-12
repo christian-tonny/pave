@@ -61,6 +61,11 @@
 }
 
 @layer utilities {
+  /* Pave surfaces — landing, interview, results */
+  .pave-focus {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pave-clay focus-visible:ring-offset-2 focus-visible:ring-offset-pave-paper;
+  }
+
   /* Touch target optimization for mobile */
   .touch-target {
     @apply min-h-[44px] min-w-[44px];

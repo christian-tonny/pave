@@ -15,7 +15,7 @@ function getResend(): Resend {
 }
 
 // Email sender configuration
-const FROM_EMAIL = process.env.RESEND_FROM_EMAIL || 'Spark <notifications@spark.rw>';
+const FROM_EMAIL = process.env.RESEND_FROM_EMAIL || 'Pave <notifications@pave.rw>';
 
 export interface BookingConfirmationEmail {
   to: string;
@@ -98,10 +98,10 @@ export async function sendBookingConfirmation(data: BookingConfirmationEmail) {
 
                 <p style="margin-top: 30px;">We'll send you a reminder before the session starts.</p>
                 
-                <p>Best regards,<br>The Spark Team</p>
+                <p>Best regards,<br>The Pave Team</p>
               </div>
               <div class="footer">
-                <p>This email was sent from Spark Learning Platform</p>
+                <p>This email was sent from Pave</p>
               </div>
             </div>
           </body>
@@ -174,10 +174,10 @@ export async function sendBookingReminder(data: BookingReminderEmail) {
 
                 <p style="margin-top: 30px;">See you tomorrow!</p>
                 
-                <p>Best regards,<br>The Spark Team</p>
+                <p>Best regards,<br>The Pave Team</p>
               </div>
               <div class="footer">
-                <p>This email was sent from Spark Learning Platform</p>
+                <p>This email was sent from Pave</p>
               </div>
             </div>
           </body>
@@ -231,14 +231,14 @@ export async function sendMentorApplicationNotification(data: MentorApplicationE
                 <p><strong>Applicant:</strong> ${data.applicantName}</p>
                 <p><strong>Application ID:</strong> ${data.applicationId}</p>
 
-                <a href="${process.env.NEXT_PUBLIC_APP_URL || 'https://spark.rw'}/admin/mentor-applications" class="button">Review Application</a>
+                <a href="${process.env.NEXT_PUBLIC_APP_URL || 'https://pave.rw'}/admin/mentor-applications" class="button">Review Application</a>
 
                 <p style="margin-top: 30px;">Please review and approve or reject the application.</p>
                 
-                <p>Best regards,<br>Spark System</p>
+                <p>Best regards,<br>Pave System</p>
               </div>
               <div class="footer">
-                <p>This is an automated notification from Spark Learning Platform</p>
+                <p>This is an automated notification from Pave</p>
               </div>
             </div>
           </body>

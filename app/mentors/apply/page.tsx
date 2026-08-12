@@ -516,7 +516,7 @@ export default function MentorApplyPage() {
             Reach out before applying. I&apos;m happy to explain the program in detail.
           </p>
           <a
-            href="mailto:mentors@opportunitymap.rw"
+            href="mailto:mentors@pave.rw"
             className="inline-block px-6 py-3 bg-brutal-blue text-white font-bold uppercase border-3 border-brutal-border shadow-brutal hover:shadow-brutal-lg hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all"
           >
             Email Me

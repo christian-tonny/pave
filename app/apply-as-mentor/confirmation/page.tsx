@@ -19,7 +19,7 @@ export default function ApplicationConfirmationPage() {
           </h1>
 
           <p className="text-lg text-white text-center mb-8">
-            Thank you for applying to become a mentor on SPARK.
+            Thank you for applying to become a mentor on Pave.
           </p>
 
           {/* What's Next */}
@@ -74,7 +74,7 @@ export default function ApplicationConfirmationPage() {
         {/* Contact Info */}
         <div className="text-center mt-8 text-gray-600">
           <p className="mb-2">Have questions about your application?</p>
-          <p className="font-bold">Contact us at: support@spark-rw.com</p>
+          <p className="font-bold">Contact us at: support@pave.rw</p>
         </div>
       </div>
     </div>

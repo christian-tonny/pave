@@ -68,7 +68,8 @@ function AutoRoleContent() {
         // Redirect to appropriate destination
         switch (role) {
           case 'student':
-            router.push('/dashboard/student');
+            // Students go straight into the interview — it is the point of signing up.
+            router.push('/interview');
             break;
           case 'educator':
             router.push('/dashboard/educator');

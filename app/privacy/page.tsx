@@ -24,7 +24,7 @@ export default function PrivacyPage() {
             {/* Intro */}
             <div className="bg-brutal-yellow/20 p-6 border-3 border-brutal-border mb-12">
               <p className="font-semibold text-gray-900 m-0">
-                TL;DR: I don&apos;t sell your data. I don&apos;t spam you. I collect only what&apos;s needed to make OpportunityMap work. You can delete your account anytime.
+                TL;DR: I don&apos;t sell your data. I don&apos;t spam you. I collect only what&apos;s needed to make Pave work. You can delete your account anytime.
               </p>
             </div>
 
@@ -42,7 +42,7 @@ export default function PrivacyPage() {
             </ul>
 
             <h3 className="text-2xl font-bold mt-6 mb-3 text-gray-900">Usage Data</h3>
-            <p className="text-gray-700">We track how you use OpportunityMap to improve the experience:</p>
+            <p className="text-gray-700">We track how you use Pave to improve the experience:</p>
             <ul className="text-gray-700 space-y-2">
               <li>Careers you view and save</li>
               <li>Assessment results (stored privately)</li>
@@ -90,7 +90,7 @@ export default function PrivacyPage() {
             <h2 className="text-3xl font-black mt-12 mb-4 text-gray-900">Who We Share Data With</h2>
             
             <h3 className="text-2xl font-bold mt-6 mb-3 text-gray-900">Service Providers</h3>
-            <p className="text-gray-700">We use trusted services to run OpportunityMap:</p>
+            <p className="text-gray-700">We use trusted services to run Pave:</p>
             <ul className="text-gray-700 space-y-2">
               <li><span className="font-bold">Convex:</span> Database and backend (US-based)</li>
               <li><span className="font-bold">Clerk:</span> Authentication and user management</li>
@@ -115,7 +115,7 @@ export default function PrivacyPage() {
               <p><span className="font-bold">Edit:</span> Update your profile, change your preferences, edit saved careers.</p>
               <p><span className="font-bold">Delete:</span> Delete your account and all associated data at any time. This is permanent.</p>
               <p><span className="font-bold">Opt-out:</span> Unsubscribe from email updates (you&apos;ll still get important account notifications).</p>
-              <p><span className="font-bold">Questions:</span> Email me at <a href="mailto:privacy@opportunitymap.rw" className="text-brutal-blue hover:underline font-semibold">privacy@opportunitymap.rw</a> for any privacy concerns.</p>
+              <p><span className="font-bold">Questions:</span> Email me at <a href="mailto:privacy@pave.rw" className="text-brutal-blue hover:underline font-semibold">privacy@pave.rw</a> for any privacy concerns.</p>
             </div>
 
             {/* Section 5 */}
@@ -136,7 +136,7 @@ export default function PrivacyPage() {
             {/* Section 6 */}
             <h2 className="text-3xl font-black mt-12 mb-4 text-gray-900">Students Under 18</h2>
             <p className="text-gray-700">
-              Most OpportunityMap users are high school students (ages 14-18). We take extra care with student data:
+              Most Pave users are high school students (ages 14-18). We take extra care with student data:
             </p>
             <ul className="text-gray-700 space-y-2">
               <li>We don&apos;t require parental consent (GDPR allows this for educational services)</li>
@@ -161,7 +161,7 @@ export default function PrivacyPage() {
             {/* Section 8 */}
             <h2 className="text-3xl font-black mt-12 mb-4 text-gray-900">Changes to This Policy</h2>
             <p className="text-gray-700">
-              If I make major changes to this privacy policy, I&apos;ll email all users at least 30 days before the changes take effect. Continued use of OpportunityMap means you accept the new terms.
+              If I make major changes to this privacy policy, I&apos;ll email all users at least 30 days before the changes take effect. Continued use of Pave means you accept the new terms.
             </p>
 
             {/* Section 9 */}
@@ -171,8 +171,8 @@ export default function PrivacyPage() {
             </p>
             <div className="bg-brutal-bg p-6 border-3 border-brutal-border mt-4">
               <p className="m-0 text-gray-900">
-                <span className="font-bold">Email:</span> <a href="mailto:privacy@opportunitymap.rw" className="text-brutal-blue hover:underline">privacy@opportunitymap.rw</a><br/>
-                <span className="font-bold">General contact:</span> <a href="mailto:hello@opportunitymap.rw" className="text-brutal-blue hover:underline">hello@opportunitymap.rw</a>
+                <span className="font-bold">Email:</span> <a href="mailto:privacy@pave.rw" className="text-brutal-blue hover:underline">privacy@pave.rw</a><br/>
+                <span className="font-bold">General contact:</span> <a href="mailto:hello@pave.rw" className="text-brutal-blue hover:underline">hello@pave.rw</a>
               </p>
             </div>
           </div>

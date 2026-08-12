@@ -13,7 +13,7 @@ export default function AboutPage() {
             We&apos;re Making Career Discovery Fair for Everyone
           </h1>
           <p className="text-xl md:text-2xl text-white/90">
-            OpportunityMap started because I saw my friends choosing careers without ever exploring what&apos;s actually out there.
+            Pave started because I saw my friends choosing careers without ever exploring what&apos;s actually out there.
           </p>
         </div>
       </section>
@@ -25,7 +25,7 @@ export default function AboutPage() {
           
           <div className="prose prose-lg max-w-none space-y-6 text-gray-700">
             <p className="text-xl leading-relaxed">
-              Hey! I&apos;m Christian Tonny, a student at ALU Rwanda and the founder of OpportunityMap. This project came out of a simple observation: <span className="font-bold">most Rwandan high school students choose their future careers without really knowing what options exist.</span>
+              Hey! I&apos;m Christian Tonny, a student at ALU Rwanda and the founder of Pave. This project came out of a simple observation: <span className="font-bold">most Rwandan high school students choose their future careers without really knowing what options exist.</span>
             </p>
             
             <p className="text-xl leading-relaxed">
@@ -37,7 +37,7 @@ export default function AboutPage() {
             </p>
 
             <p className="text-xl leading-relaxed">
-              So I built OpportunityMap as a solution. It&apos;s a platform where high school students can:
+              So I built Pave as a solution. It&apos;s a platform where high school students can:
             </p>
 
             <ul className="list-none space-y-4 my-8">
@@ -122,7 +122,7 @@ export default function AboutPage() {
           
           <div className="space-y-6 text-gray-700 text-lg">
             <p>
-              OpportunityMap is currently in <span className="font-bold">early development</span>. I&apos;m building it as a solo project while studying at ALU Rwanda. Here&apos;s where things stand:
+              Pave is currently in <span className="font-bold">early development</span>. I&apos;m building it as a solo project while studying at ALU Rwanda. Here&apos;s where things stand:
             </p>
 
             <div className="grid md:grid-cols-2 gap-6 my-8">

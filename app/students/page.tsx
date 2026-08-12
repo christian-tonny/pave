@@ -104,7 +104,7 @@ export default function StudentsPage() {
       <section className="px-4 py-16 md:py-24 bg-brutal-bg">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl md:text-5xl font-black mb-12 text-center text-gray-900">
-            How OpportunityMap Works
+            How Pave Works
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -245,7 +245,7 @@ export default function StudentsPage() {
                   <span className="text-brutal-yellow text-2xl">★★★★★</span>
                 </div>
                 <p className="text-gray-700 mb-4">
-                  &quot;OpportunityMap showed me careers I never knew existed. Now I know exactly what A-Level subjects to choose!&quot;
+                  &quot;Pave showed me careers I never knew existed. Now I know exactly what A-Level subjects to choose!&quot;
                 </p>
                 <p className="font-bold text-gray-900">&mdash; S3 Student, Kigali</p>
               </div>
@@ -268,7 +268,7 @@ export default function StudentsPage() {
           <div className="space-y-4">
             <details className="bg-brutal-bg p-6 border-3 border-brutal-border">
               <summary className="font-bold cursor-pointer text-gray-900">
-                Is OpportunityMap really free?
+                Is Pave really free?
               </summary>
               <p className="mt-3 text-gray-700">
                 Yes! 100% free for all students. No hidden costs, no premium tiers. We&apos;re funded by partnerships with companies and schools.
@@ -312,7 +312,7 @@ export default function StudentsPage() {
             Your Future Starts With Better Information
           </h2>
           <p className="text-xl md:text-2xl mb-8 text-white/90">
-            Join hundreds of Rwandan students exploring careers on OpportunityMap.
+            Join hundreds of Rwandan students exploring careers on Pave.
           </p>
           
           <Link

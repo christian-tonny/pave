@@ -128,7 +128,7 @@ export default function ContactPage() {
 
                 {status === 'error' && (
                   <div className="p-4 bg-red-100 border-3 border-red-500 text-gray-900 font-semibold">
-                    Something went wrong. Try emailing me directly: hello@opportunitymap.rw
+                    Something went wrong. Try emailing me directly: hello@pave.rw
                   </div>
                 )}
               </form>
@@ -145,10 +145,10 @@ export default function ContactPage() {
                     <Mail className="w-8 h-8 text-brutal-orange mb-3" />
                     <h3 className="font-black text-xl mb-2">Email</h3>
                     <a 
-                      href="mailto:hello@opportunitymap.rw"
+                      href="mailto:hello@pave.rw"
                       className="text-brutal-blue hover:underline font-semibold"
                     >
-                      hello@opportunitymap.rw
+                      hello@pave.rw
                     </a>
                     <p className="text-gray-600 mt-2 text-sm">
                       Response time: 24-48 hours
@@ -162,23 +162,23 @@ export default function ContactPage() {
                     
                     <div className="space-y-3">
                       <a
-                        href="https://twitter.com/opportunitymap_rw"
+                        href="https://twitter.com/pave_rw"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-3 text-gray-700 hover:text-brutal-blue transition-colors"
                       >
                         <Twitter className="w-5 h-5" />
-                        <span className="font-semibold">@opportunitymap_rw</span>
+                        <span className="font-semibold">@pave_rw</span>
                       </a>
                       
                       <a
-                        href="https://linkedin.com/company/opportunitymap"
+                        href="https://linkedin.com/company/pave-rw"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-3 text-gray-700 hover:text-brutal-blue transition-colors"
                       >
                         <Linkedin className="w-5 h-5" />
-                        <span className="font-semibold">OpportunityMap Rwanda</span>
+                        <span className="font-semibold">Pave Rwanda</span>
                       </a>
                       
                       <a
@@ -205,20 +205,20 @@ export default function ContactPage() {
                       </li>
                       <li>
                         <span className="font-bold text-gray-900">Partnerships:</span>{' '}
-                        <a href="mailto:partnerships@opportunitymap.rw" className="text-brutal-blue hover:underline">
-                          partnerships@opportunitymap.rw
+                        <a href="mailto:partnerships@pave.rw" className="text-brutal-blue hover:underline">
+                          partnerships@pave.rw
                         </a>
                       </li>
                       <li>
                         <span className="font-bold text-gray-900">Press:</span>{' '}
-                        <a href="mailto:press@opportunitymap.rw" className="text-brutal-blue hover:underline">
-                          press@opportunitymap.rw
+                        <a href="mailto:press@pave.rw" className="text-brutal-blue hover:underline">
+                          press@pave.rw
                         </a>
                       </li>
                       <li>
                         <span className="font-bold text-gray-900">Support:</span>{' '}
-                        <a href="mailto:support@opportunitymap.rw" className="text-brutal-blue hover:underline">
-                          support@opportunitymap.rw
+                        <a href="mailto:support@pave.rw" className="text-brutal-blue hover:underline">
+                          support@pave.rw
                         </a>
                       </li>
                     </ul>
@@ -245,7 +245,7 @@ export default function ContactPage() {
           <div className="space-y-4">
             <details className="bg-white p-6 border-3 border-brutal-border">
               <summary className="font-bold cursor-pointer text-gray-900">
-                When will OpportunityMap be fully launched?
+                When will Pave be fully launched?
               </summary>
               <p className="mt-3 text-gray-700">
                 We&apos;re targeting a beta launch in mid-2025. If you&apos;re a school or organization interested in early access, definitely reach out!
@@ -275,7 +275,7 @@ export default function ContactPage() {
                 How much does it cost for students?
               </summary>
               <p className="mt-3 text-gray-700">
-                OpportunityMap will be free for all students. We&apos;re exploring sponsorships and school partnerships to keep it sustainable.
+                Pave will be free for all students. We&apos;re exploring sponsorships and school partnerships to keep it sustainable.
               </p>
             </details>
           </div>

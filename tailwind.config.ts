@@ -51,7 +51,21 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // OpportunityMap Neobrutalist Colors
+        // Pave — the brand palette for the landing, interview and results surfaces.
+        // Warm paper, deep ink, one clay accent, a forest green for quiet contrast.
+        pave: {
+          paper: '#FAF7F1',
+          card: '#FFFFFF',
+          ink: '#17130F',
+          soft: '#5C534A',
+          line: '#E6DED1',
+          clay: '#B4471F',
+          'clay-soft': '#F5E5DB',
+          forest: '#1E3A31',
+          sun: '#D9A419',
+        },
+        // Neobrutalist colours retained for the existing careers, mentor and
+        // dashboard surfaces that are built on them.
         'brutal-orange': '#FF6B35',
         'brutal-blue': '#004E89',
         'brutal-yellow': '#F7FD04',
@@ -68,6 +82,7 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
+        display: ['var(--font-display)', 'Georgia', 'serif'],
         sans: [
           "-apple-system",
           "BlinkMacSystemFont",

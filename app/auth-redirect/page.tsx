@@ -47,7 +47,9 @@ export default function AuthRedirectPage() {
         router.push('/admin');
         break;
       case 'student':
-        router.push('/dashboard/student');
+        // Students land on their path. The interview forwards to the results when
+        // it is already finished, so this is the right door either way.
+        router.push('/interview');
         break;
       case 'mentor':
         router.push('/dashboard/mentor');
@@ -56,18 +58,17 @@ export default function AuthRedirectPage() {
         router.push('/dashboard/educator');
         break;
       default:
-        // If no role is set or unrecognized role, redirect to role selection
-        router.push('/sign-up');
+        // No role yet — treat them as someone deciding what to do next.
+        router.push('/interview');
     }
   }, [user, isAdmin, isLoading, router, retryCount]);
 
   // Show loading state
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center">
+    <div className="min-h-screen bg-pave-paper flex items-center justify-center px-4">
       <div className="text-center">
-        <div className="w-16 h-16 border-4 border-black border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-        <p className="text-xl font-bold">Redirecting...</p>
-        <p className="text-gray-600 mt-2">Taking you to your dashboard</p>
+        <div className="w-8 h-8 border-2 border-pave-line border-t-pave-clay rounded-full animate-spin mx-auto mb-4" />
+        <p className="text-pave-ink">Taking you to your path…</p>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-// OpportunityMap Type Definitions
+// Pave Type Definitions
 
 export type UserRole = 'student' | 'mentor' | 'company' | 'partner';
 

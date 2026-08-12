@@ -1,11 +1,11 @@
 {
-  "name": "Spark Learning Platform",
-  "short_name": "Spark",
-  "description": "Offline-capable educational platform for rural students",
+  "name": "Pave",
+  "short_name": "Pave",
+  "description": "Find the career path that fits you — built for Rwanda.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#2563EB",
+  "theme_color": "#B4471F",
   "orientation": "portrait",
   "icons": [
     {

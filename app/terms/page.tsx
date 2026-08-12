@@ -24,21 +24,21 @@ export default function TermsPage() {
             {/* Intro */}
             <div className="bg-brutal-yellow/20 p-6 border-3 border-brutal-border mb-12">
               <p className="font-semibold text-gray-900 m-0">
-                TL;DR: Be respectful. Don&apos;t abuse the platform. We&apos;re not responsible if you make career decisions based solely on OpportunityMap. This is a personal project, not a corporation&mdash;I&apos;m doing my best to make it helpful.
+                TL;DR: Be respectful. Don&apos;t abuse the platform. We&apos;re not responsible if you make career decisions based solely on Pave. This is a personal project, not a corporation&mdash;I&apos;m doing my best to make it helpful.
               </p>
             </div>
 
             {/* Section 1 */}
             <h2 className="text-3xl font-black mt-12 mb-4 text-gray-900">Acceptance of Terms</h2>
             <p className="text-gray-700">
-              By using OpportunityMap, you agree to these terms. If you don&apos;t agree, please don&apos;t use the platform. Simple as that.
+              By using Pave, you agree to these terms. If you don&apos;t agree, please don&apos;t use the platform. Simple as that.
             </p>
             <p className="text-gray-700">
               These terms apply to all users: students, mentors, educators, and anyone else using the site.
             </p>
 
             {/* Section 2 */}
-            <h2 className="text-3xl font-black mt-12 mb-4 text-gray-900">Who Can Use OpportunityMap</h2>
+            <h2 className="text-3xl font-black mt-12 mb-4 text-gray-900">Who Can Use Pave</h2>
             
             <h3 className="text-2xl font-bold mt-6 mb-3 text-gray-900">Students</h3>
             <ul className="text-gray-700 space-y-2">
@@ -56,7 +56,7 @@ export default function TermsPage() {
             </ul>
 
             {/* Section 3 */}
-            <h2 className="text-3xl font-black mt-12 mb-4 text-gray-900">How to Use OpportunityMap</h2>
+            <h2 className="text-3xl font-black mt-12 mb-4 text-gray-900">How to Use Pave</h2>
             
             <div className="bg-brutal-bg p-6 border-3 border-brutal-border my-6">
               <h4 className="font-black text-xl mb-3 text-gray-900">✅ DO:</h4>
@@ -64,7 +64,7 @@ export default function TermsPage() {
                 <li>Explore careers and learn about different fields</li>
                 <li>Book mentor sessions and ask thoughtful questions</li>
                 <li>Share honest feedback to help us improve</li>
-                <li>Recommend OpportunityMap to friends and classmates</li>
+                <li>Recommend Pave to friends and classmates</li>
               </ul>
 
               <h4 className="font-black text-xl mt-6 mb-3 text-gray-900">❌ DON&apos;T:</h4>
@@ -80,7 +80,7 @@ export default function TermsPage() {
             {/* Section 4 */}
             <h2 className="text-3xl font-black mt-12 mb-4 text-gray-900">Career Information Disclaimer</h2>
             <p className="text-gray-700 font-semibold">
-              Important: OpportunityMap provides general career information, not personalized career advice.
+              Important: Pave provides general career information, not personalized career advice.
             </p>
             <ul className="text-gray-700 space-y-2">
               <li>Career profiles are researched to the best of my ability but may not be 100% accurate or up-to-date</li>
@@ -120,7 +120,7 @@ export default function TermsPage() {
             </p>
             <ul className="text-gray-700 space-y-2">
               <li>You retain ownership of your content</li>
-              <li>You grant us permission to display it on OpportunityMap</li>
+              <li>You grant us permission to display it on Pave</li>
               <li>We can remove content that violates these terms</li>
               <li>Don&apos;t post spam, offensive material, or copyrighted content</li>
             </ul>
@@ -128,7 +128,7 @@ export default function TermsPage() {
             {/* Section 7 */}
             <h2 className="text-3xl font-black mt-12 mb-4 text-gray-900">Intellectual Property</h2>
             <p className="text-gray-700">
-              OpportunityMap&apos;s content (career profiles, design, code) is owned by me (Christian Tonny) unless otherwise noted:
+              Pave&apos;s content (career profiles, design, code) is owned by me (Christian Tonny) unless otherwise noted:
             </p>
             <ul className="text-gray-700 space-y-2">
               <li>You can view and use the site for personal, non-commercial purposes</li>
@@ -144,16 +144,16 @@ export default function TermsPage() {
             
             <div className="bg-brutal-bg p-6 border-3 border-brutal-border my-6">
               <p className="text-gray-700 m-0">
-                <span className="font-bold">OpportunityMap is provided &quot;as is.&quot;</span> I&apos;m doing my best to make it useful and accurate, but I can&apos;t guarantee:
+                <span className="font-bold">Pave is provided &quot;as is.&quot;</span> I&apos;m doing my best to make it useful and accurate, but I can&apos;t guarantee:
               </p>
               <ul className="text-gray-700 space-y-2 mt-3">
                 <li>That the site will always be available (it might go down sometimes)</li>
                 <li>That career information is 100% accurate or complete</li>
                 <li>That you&apos;ll find the perfect career or mentor</li>
-                <li>That using OpportunityMap will lead to specific outcomes</li>
+                <li>That using Pave will lead to specific outcomes</li>
               </ul>
               <p className="text-gray-700 mt-4 font-semibold">
-                I&apos;m not liable for any decisions you make based on information from OpportunityMap. Use it as one tool among many in your career exploration.
+                I&apos;m not liable for any decisions you make based on information from Pave. Use it as one tool among many in your career exploration.
               </p>
             </div>
 
@@ -171,7 +171,7 @@ export default function TermsPage() {
             {/* Section 10 */}
             <h2 className="text-3xl font-black mt-12 mb-4 text-gray-900">Changes to These Terms</h2>
             <p className="text-gray-700">
-              I might update these terms as OpportunityMap grows. If I make significant changes:
+              I might update these terms as Pave grows. If I make significant changes:
             </p>
             <ul className="text-gray-700 space-y-2">
               <li>I&apos;ll email all users at least 30 days in advance</li>
@@ -192,8 +192,8 @@ export default function TermsPage() {
             </p>
             <div className="bg-brutal-bg p-6 border-3 border-brutal-border mt-4">
               <p className="m-0 text-gray-900">
-                <span className="font-bold">Email:</span> <a href="mailto:legal@opportunitymap.rw" className="text-brutal-blue hover:underline">legal@opportunitymap.rw</a><br/>
-                <span className="font-bold">General contact:</span> <a href="mailto:hello@opportunitymap.rw" className="text-brutal-blue hover:underline">hello@opportunitymap.rw</a>
+                <span className="font-bold">Email:</span> <a href="mailto:legal@pave.rw" className="text-brutal-blue hover:underline">legal@pave.rw</a><br/>
+                <span className="font-bold">General contact:</span> <a href="mailto:hello@pave.rw" className="text-brutal-blue hover:underline">hello@pave.rw</a>
               </p>
             </div>
 

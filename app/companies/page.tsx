@@ -62,7 +62,7 @@ export default function CompaniesPage() {
               The Talent Gap Problem
             </h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Rwandan companies struggle to find qualified talent. Students don&apos;t know your industry exists. OpportunityMap bridges this gap.
+              Rwandan companies struggle to find qualified talent. Students don&apos;t know your industry exists. Pave bridges this gap.
             </p>
           </div>
 
@@ -104,7 +104,7 @@ export default function CompaniesPage() {
               <Building2 className="w-12 h-12 text-brutal-orange mb-4" />
               <h3 className="text-2xl font-black mb-3">Career Sponsorship</h3>
               <p className="text-gray-700 mb-6">
-                Sponsor a career profile on OpportunityMap and showcase your industry to thousands of students.
+                Sponsor a career profile on Pave and showcase your industry to thousands of students.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start gap-2">
@@ -226,7 +226,7 @@ export default function CompaniesPage() {
       <section className="px-4 py-16 md:py-24 bg-white">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-black mb-12 text-center">
-            Why Partner With OpportunityMap?
+            Why Partner With Pave?
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -357,7 +357,7 @@ export default function CompaniesPage() {
             Ready to Build Your Talent Pipeline?
           </h2>
           <p className="text-xl md:text-2xl mb-8 text-white/90">
-            Let&apos;s discuss how OpportunityMap can help you connect with Rwanda&apos;s next generation of talent.
+            Let&apos;s discuss how Pave can help you connect with Rwanda&apos;s next generation of talent.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -370,7 +370,7 @@ export default function CompaniesPage() {
             </Link>
             
             <a
-              href="mailto:partnerships@opportunitymap.rw"
+              href="mailto:partnerships@pave.rw"
               className="px-8 py-4 bg-brutal-blue text-white font-bold text-lg uppercase border-3 border-white shadow-brutal hover:shadow-brutal-lg hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all"
             >
               Email Us
@@ -378,7 +378,7 @@ export default function CompaniesPage() {
           </div>
 
           <p className="text-white/80 mt-6">
-            partnerships@opportunitymap.rw • Response within 24 hours
+            partnerships@pave.rw • Response within 24 hours
           </p>
         </div>
       </section>

@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Fraunces } from "next/font/google";
 import "./globals.css";
 import "../styles/tiptap.css";
 import Navigation from "@/components/navigation";
@@ -8,16 +8,23 @@ import { UserSyncProvider } from "./UserSyncProvider";
 import { NotificationProvider } from "@/components/NotificationProvider";
 import { Toaster } from "@/components/ui/toaster";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+
+const display = Fraunces({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+  variable: "--font-display",
+});
 
 export const metadata: Metadata = {
-  title: "OpportunityMap - Discover Your Future Career in Rwanda",
-  description: "Explore 100+ careers, take assessments, and book 15-min chats with professionals to discover your path.",
+  title: "Pave — find the career path that fits you",
+  description:
+    "Pave asks you what you are actually drawn to, what you can commit to, and where you can be — then shows you a career path in Rwanda you can start, with the opportunities, schools and next steps to get there.",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "OpportunityMap",
+    title: "Pave",
   },
 };
 
@@ -26,7 +33,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: "#FF6B35",
+  themeColor: "#B4471F",
 };
 
 export default function RootLayout({
@@ -36,7 +43,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="smooth-scroll">
-      <body className={inter.className}>
+      <body className={`${inter.className} ${display.variable}`}>
         <ConvexClientProvider>
           <UserSyncProvider>
             <NotificationProvider>
