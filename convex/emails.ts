@@ -20,12 +20,22 @@ export const sendEmail = internalAction({
     const apiUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
     const webhookSecret = process.env.CONVEX_WEBHOOK_SECRET;
 
+    if (!webhookSecret) {
+      console.error(
+        "CONVEX_WEBHOOK_SECRET is not set. Refusing to call the email API."
+      );
+      return {
+        success: false,
+        error: "CONVEX_WEBHOOK_SECRET is not set",
+      };
+    }
+
     try {
       const response = await fetch(`${apiUrl}/api/emails/send`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          ...(webhookSecret && { Authorization: `Bearer ${webhookSecret}` }),
+          Authorization: `Bearer ${webhookSecret}`,
         },
         body: JSON.stringify({
           type: args.type,
