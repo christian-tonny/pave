@@ -5,27 +5,20 @@ import {
   sendMentorApplicationNotification,
   sendMentorApplicationStatusNotification
 } from '@/lib/emails/resend';
-
-// Verify the request is from Convex using a shared secret
-function verifyConvexRequest(request: NextRequest) {
-  const authHeader = request.headers.get('authorization');
-  const expectedSecret = process.env.CONVEX_WEBHOOK_SECRET;
-  
-  if (!expectedSecret) {
-    console.warn('CONVEX_WEBHOOK_SECRET not set - email webhook is insecure');
-    return true; // Allow in development
-  }
-  
-  return authHeader === `Bearer ${expectedSecret}`;
-}
+import { verifyConvexWebhookAuth } from '@/lib/emails/verify-convex-webhook';
 
 export async function POST(request: NextRequest) {
   try {
-    // Verify request is from Convex
-    if (!verifyConvexRequest(request)) {
+    const auth = verifyConvexWebhookAuth({
+      authorizationHeader: request.headers.get('authorization'),
+      expectedSecret: process.env.CONVEX_WEBHOOK_SECRET,
+      nodeEnv: process.env.NODE_ENV,
+    });
+
+    if (!auth.ok) {
       return NextResponse.json(
-        { error: 'Unauthorized' },
-        { status: 401 }
+        { error: auth.error },
+        { status: auth.status }
       );
     }
 
