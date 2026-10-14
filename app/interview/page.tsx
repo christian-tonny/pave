@@ -132,7 +132,7 @@ export default function InterviewPage() {
           <p className="text-pave-ink">This interview is finished.</p>
           <Link
             href="/interview/results"
-            className="mt-4 inline-flex items-center px-5 py-3 bg-pave-ink text-white rounded-full hover:bg-pave-clay transition-colors"
+            className="mt-4 inline-flex items-center px-5 py-3 bg-pave-ink text-white hover:bg-pave-clay transition-colors"
           >
             See your path
           </Link>
@@ -224,7 +224,7 @@ export default function InterviewPage() {
             type="button"
             onClick={() => goNext(answers)}
             disabled={!canContinue}
-            className="inline-flex items-center gap-2 px-6 py-3 min-h-[48px] bg-pave-ink text-white rounded-full transition-colors hover:bg-pave-clay disabled:opacity-30 disabled:hover:bg-pave-ink pave-focus"
+            className="inline-flex items-center gap-2 px-6 py-3 min-h-[48px] bg-pave-ink text-white transition-colors hover:bg-pave-clay disabled:opacity-30 disabled:hover:bg-pave-ink pave-focus"
           >
             {index === total - 1 ? 'See my path' : 'Continue'}
             <ArrowRight className="w-4 h-4" />

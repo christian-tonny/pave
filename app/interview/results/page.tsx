@@ -63,7 +63,7 @@ export default function ResultsPage() {
           </p>
           <Link
             href="/interview"
-            className="mt-8 inline-flex items-center gap-2 px-6 py-3 min-h-[48px] bg-pave-ink text-white rounded-full hover:bg-pave-clay transition-colors"
+            className="mt-8 inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 min-h-[48px] bg-pave-ink text-white hover:bg-pave-clay transition-colors"
           >
             {Object.keys(answers).length > 0 ? 'Finish the interview' : 'Start the interview'}
             <ArrowRight className="w-4 h-4" />
@@ -85,19 +85,16 @@ export default function ResultsPage() {
       <div className="container mx-auto max-w-3xl px-4 py-12 sm:py-16">
         {/* Summary */}
         <header>
-          <p className="text-xs uppercase tracking-[0.2em] text-pave-soft">Your path</p>
-          <h1 className="mt-5 font-display text-3xl sm:text-4xl leading-tight text-balance">
+          <h1 className="font-display text-3xl sm:text-4xl leading-tight text-balance">
             {active.path.title}
           </h1>
           <p className="mt-4 text-lg text-pave-soft leading-relaxed text-pretty">{result.summary}</p>
         </header>
 
         {/* The path itself */}
-        <section className="mt-10 rounded-2xl border border-pave-line bg-white p-6 sm:p-8">
-          <div className="flex flex-wrap items-center gap-3">
-            <span className="inline-flex items-center px-3 py-1 rounded-full bg-pave-clay-soft text-pave-clay text-sm">
-              {FIT_LABEL[active.fit]}
-            </span>
+        <section className="mt-10 border border-pave-line bg-white p-5 sm:p-8">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-baseline gap-1 sm:gap-3">
+            <span className="text-sm text-pave-clay">{FIT_LABEL[active.fit]}</span>
             <span className="text-sm text-pave-soft">{payLine(active)}</span>
           </div>
 
@@ -106,15 +103,11 @@ export default function ResultsPage() {
 
           {active.reasons.length > 0 ? (
             <div className="mt-7">
-              <h2 className="text-sm uppercase tracking-wider text-pave-soft">Why this fits you</h2>
+              <h2 className="text-base text-pave-ink">Why this fits you</h2>
               <ul className="mt-3 space-y-2.5">
                 {active.reasons.map((reason) => (
-                  <li key={reason} className="flex gap-3 leading-relaxed">
-                    <span
-                      aria-hidden="true"
-                      className="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-pave-clay"
-                    />
-                    <span>{reason}</span>
+                  <li key={reason} className="leading-relaxed">
+                    {reason}
                   </li>
                 ))}
               </ul>
@@ -122,8 +115,8 @@ export default function ResultsPage() {
           ) : null}
 
           {active.tensions.length > 0 ? (
-            <div className="mt-7 rounded-xl bg-pave-paper border border-pave-line p-5">
-              <h2 className="text-sm uppercase tracking-wider text-pave-soft">Worth knowing</h2>
+            <div className="mt-7 bg-pave-paper border border-pave-line p-5">
+              <h2 className="text-base text-pave-ink">Worth knowing</h2>
               <ul className="mt-3 space-y-2.5">
                 {active.tensions.map((tension) => (
                   <li key={tension} className="text-pave-soft leading-relaxed">
@@ -136,7 +129,7 @@ export default function ResultsPage() {
 
           {active.route ? (
             <div className="mt-7 border-t border-pave-line pt-6">
-              <h2 className="text-sm uppercase tracking-wider text-pave-soft">How you get on it</h2>
+              <h2 className="text-base text-pave-ink">How you get on it</h2>
               <p className="mt-3 text-lg">{active.route.label}</p>
               <p className="text-sm text-pave-soft">{active.route.duration}</p>
               <p className="mt-2 text-pave-soft leading-relaxed">{active.route.reality}</p>
@@ -202,7 +195,7 @@ export default function ResultsPage() {
                     setActiveIndex(result.matches.indexOf(match));
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                   }}
-                  className="text-left rounded-xl border border-pave-line bg-white p-5 hover:border-pave-soft/50 transition-colors pave-focus"
+                  className="text-left border border-pave-line bg-white p-5 hover:border-pave-soft/50 transition-colors pave-focus"
                 >
                   <span className="block text-sm text-pave-soft">{FIT_LABEL[match.fit]}</span>
                   <span className="mt-1 block text-lg">{match.path.title}</span>
@@ -271,7 +264,7 @@ function SchoolsSection({ match }: { match: PathMatch }) {
             href={programme.website}
             target="_blank"
             rel="noopener noreferrer"
-            className="block rounded-xl border border-pave-line bg-white p-5 hover:border-pave-soft/50 transition-colors pave-focus"
+            className="block border border-pave-line bg-white p-5 hover:border-pave-soft/50 transition-colors pave-focus"
           >
             <div className="flex items-start justify-between gap-4">
               <div>
@@ -335,11 +328,11 @@ function OpportunityRow({ opportunity }: { opportunity: Opportunity }) {
       href={opportunity.website}
       target="_blank"
       rel="noopener noreferrer"
-      className="block rounded-xl border border-pave-line bg-white p-5 hover:border-pave-soft/50 transition-colors pave-focus"
+      className="block border border-pave-line bg-white p-5 hover:border-pave-soft/50 transition-colors pave-focus"
     >
       <div className="flex items-start justify-between gap-4">
         <div>
-          <p className="text-xs uppercase tracking-wider text-pave-soft">
+          <p className="text-sm text-pave-soft">
             {KIND_LABEL[opportunity.kind]}
           </p>
           <p className="mt-1.5 text-lg leading-snug">{opportunity.org}</p>

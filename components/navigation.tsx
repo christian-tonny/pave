@@ -133,7 +133,7 @@ export default function Navigation() {
               </Link>
               <Link
                 href="/sign-up"
-                className="ml-2 inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-pave-ink hover:bg-pave-clay transition-colors rounded-full pave-focus"
+                className="ml-2 inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-pave-ink hover:bg-pave-clay transition-colors pave-focus"
               >
                 Start the interview
               </Link>
@@ -191,7 +191,7 @@ export default function Navigation() {
               <Link
                 href="/sign-up"
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-center px-4 py-3 min-h-[48px] bg-pave-ink text-white rounded-full"
+                className="block text-center px-4 py-3 min-h-[48px] bg-pave-ink text-white"
               >
                 Start the interview
               </Link>
